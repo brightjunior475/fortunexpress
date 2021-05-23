@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  color: #fff;
+  background: #333;
+  position: relative; /* required to position the copyright at the bottom */
+  font-size: 80%;
+  margin-top: 10px;
+  height: 300px;
+}
+.footer-copyright {
+  width: 100%;
+  height: 40px;
+  background: #111;
+  /* positions the copyright at the bottom of the footer */
+  padding: 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+}
+.footer-body {
+  margin-bottom: 40px;
+  height: 500px;
+  background-image: url("slide2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+/* the clearfix hack */
+.footer-body::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* float the divs */
+.footer-body > div {
+  float: left;
+  padding: 20px;
+}
+/* sets the width of the first column */
+.footer-body > div:first-child {
+  font-size: 150%;
+  width: 35%;
+  text-align: center;
+}
+/* sets the width of the second column */
+.footer-body > div:last-child {
+  width: 65%;
+}
+.newsletter > input {
+  border: none;
+  width: 300px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 17px;
+  display: inline-block;
+  height: 40px;
+  margin-left: 87px;
+}
+.newsletter > button {
+  border: none;
+  width: 120px;
+  outline: none;
+  font-size: 15px;
+  color: black;
+  padding-bottom: 2px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-left: 175px;
+  height: 50px;
+  margin-top: 10px;
+}
+.newsletter > button:hover {
+  background-color: chocolate;
+}
+.newsletter input::placeholder {
+  color: black;
+  padding-left: 15px;
+}
+
+.freq a {
+  color: yellow;
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 390px;
+}
+.freq {
+  display: inline-block;
+}
+
+.brand img {
+  padding-top: 10px;
+}
+
+.follow {
+  padding-top: 10px;
+}
+.follow a {
+  color: whitesmoke;
+  font-size: 15px;
+}
+.follow a:hover {
+  color: chocolate;
+}
+.follow li {
+  font-size: 20px;
+  list-style-type: disc;
+  text-decoration: none;
+}
+.shippingservices {
+  width: 40%;
+  float: right;
+  margin-top: -235px;
+  margin-right: 85px;
+}
+@media only screen and (max-width : 320px) {
+  .newsletter > button {
+    font-size: 12px;
+  }
+  footer {
+    height: 750px;
+  }
+  .brand,.follow,.newsletter{ 
+  margin-top: 10px;
+  }
+  .brand,.newsletter{
+    background-color: rgb(50, 204, 158);
+  }
+}
+@media only screen and (max-width : 720px) { 
+  .about img{
+    height: 50%;
+    width:50%;
+  }
+  footer {
+    height: 650px;
+  }
+}
+@media only screen and (min-width : 720px) and (max-width : 820px) {
+footer {
+  min-height: 500px;
+}
+ }
+ @media only screen and (min-width : 820px) and (max-width : 1020px) {
+  footer {
+    min-height: 500px;
+  }
+   }

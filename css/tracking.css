@@ -1,0 +1,217 @@
+.col-sm-4{
+  color: blanchedalmond;
+  text-align: center;
+}
+.col-sm-4, .col-sm-4 h3{
+  font-size: 13px;
+}
+.col-sm-4 img{
+  width: 90px;
+  margin-left: 10px;
+  padding: 5px;
+}
+.support_one, .support_two, .support_three {
+  background-color: brown;
+  height: 300px;
+ margin-top: 10px; 
+ width:100%;
+}
+.support_one img {
+  margin-top: 50px;
+  margin-left: 02%;
+}
+.support_three img {
+  margin-top: 50px;
+}
+.support_one h3 {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 25px;
+  color: whitesmoke;
+}
+.support_one p {
+  text-align: center;
+  padding-top: 20px;
+  color: whitesmoke;
+  font-weight: lighter;
+}
+.support_two a {
+  font-weight: bold;
+}
+.support_two {
+  background-color: black;
+  height: 300px;
+  margin-right: -10px;  
+}
+.support_two h3 {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 25px;
+  color: whitesmoke;
+}
+.support_two p {
+  text-align: center;
+  padding-top: 20px;
+  color: whitesmoke;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.support_three {
+  background-color: chocolate;
+}
+.support_three h3 {
+  text-align: center;
+  font-size: 35px;
+  color: yellow;
+  margin-top: 40px;
+}
+.support_three img, .support_one img {
+  margin-top: 20px;
+  width:15%;
+}
+.support_three p {
+  text-align: center;
+  padding-top: 5px;
+  color: whitesmoke;
+  font-size: 20px;
+}
+.inputtext {
+  margin-left: 85px;
+  width: 250px;
+  margin-left: 20px;
+  border: 1px solid whitesmoke;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.733);
+  color: white;
+}
+.inputtext::placeholder {
+  color: white;
+  text-align: center;
+}
+.inputtext:hover {
+  border: 1px solid chocolate;
+}
+.inputbutton {
+  background-color: brown;
+  padding: 10px;
+  margin-left: 20px;
+  width: 250px;
+}
+.inputbutton:hover {
+  background-color: chocolate;
+}
+@media only screen and (max-width : 320px) {
+  .support_two, .support_one, .support_three{
+    position: relative;
+    clear: both;
+  }
+  .support_one{
+    height: auto;
+    width: 330px;
+  }
+  .support_one img, .support_three img{
+    margin-top: 10px;
+    margin-left: 02%;
+    width: 20%;
+  }
+  .support_one p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  .support_one h3 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    color: whitesmoke;
+  }
+    .support_two{  
+    margin-top: 183px;
+    padding-top: 5px;
+    height: 200px;
+  }
+  .support_two h3 {
+    font-size: 18px;
+  }
+  .support_two p{
+    padding-top: 20px;
+    font-size: 10px;
+  }
+  .support_three{
+    height: auto;   
+    margin-top: 0px;
+    padding-top: 5px;
+    width: 330px;
+  }
+  .support_three h3{
+    font-size: 18px;
+    padding-top: -100px !important; 
+  }
+  .support_three p{
+    font-size: 15px;
+  }
+ 
+}
+@media only screen and (max-width : 720px) {
+  .support_two h3{
+    margin-top: 50px !important;
+  }
+ 
+}
+@media only screen and (max-width : 767px) {  
+ 
+  .about img {
+    width: 350px;
+    height:270px;
+  }
+  .support_one{
+    background-color: navy;
+  }
+  .support_one img{
+    width:100px !important;
+  }
+  .trans{
+    position: relative;
+    margin-top:-300px;
+    margin-left: 190px;
+    margin-right: 70px;
+    min-width:330px;
+    max-height:250px;
+    text-align: right;
+  box-shadow: 15px 15px 10px black;
+  }
+.trans p {
+    color: whitesmoke;
+    font-size: 8px;
+  }
+  .trans h1 {
+    position: relative;
+    font-size: 12px;
+    margin-top: -90px;
+  } 
+}
+@media only screen and (min-width:720px) and (max-width : 840px) {  
+  body{
+    background-color: tomato;
+  }
+  .support_two h3{
+    font-size: 20px;
+  }  
+  .inputtext, .inputbutton {
+    width: 190px;
+    margin-left: 0px;
+  }
+ 
+  .support_three p, .support_one p{
+    font-size: 15px;
+  }
+  .support_three h3, .support_one h3{
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width :940px) {
+.inputtext, .inputbutton {
+  width: 190px;
+  margin-left: 0px;
+}
+}
