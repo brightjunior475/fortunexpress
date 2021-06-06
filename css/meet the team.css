@@ -28,7 +28,7 @@
 /* Clear floats */
 .container::after,
 .row1::after {
-  content: "";
+  content: '';
   clear: both;
   display: table;
 }
