@@ -192,13 +192,37 @@ html {
   }
 }
 .wallpaper {
-  background-image: url("slide2.jpg");
+  background-image: url('slide2.jpg');
   height: 500px;
   width: 100%;
   background-position: center;
   background-size: cover;
   color: white;
   margin-top: -37px;
+}
+.pre {
+  padding-top: 80px;
+  padding-left: 20px;
+  font-weight: bolder;
+  width: 39%;
+}
+@media only screen and (max-width: 820px) {
+  .pre {
+    width: 100%;
+    font-weight: lighter;
+  }
+}
+.started {
+  box-shadow: 0px 0px 15px yellow;
+}
+
+.pservices {
+  font-size: 20px;
+}
+@media only screen and (max-width: 820px) {
+  .pservices {
+    font-size: 15px;
+  }
 }
 .wallpaper > h3,
 a {
@@ -211,9 +235,7 @@ a {
   margin-left: 20px;
   border: 1px solid yellow;
 }
-.wallpaper > p {
-  width: 39%;
-}
+
 .started {
   color: yellow;
   background: transparent;
@@ -231,7 +253,7 @@ a {
   margin-top: 10px;
 }
 
-.wallpaper > a:hover{
-text-decoration: none;
-color: red;
+.wallpaper > a:hover {
+  text-decoration: none;
+  color: red;
 }
